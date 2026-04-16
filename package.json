@@ -1,0 +1,62 @@
+{
+  "name": "@guardianlegis/prazos-processuais",
+  "version": "1.0.0",
+  "description": "Calculador de prazos processuais brasileiros com suporte a dias úteis, feriados nacionais/estaduais/municipais/forenses e regras do CPC/2015, CPP e CLT.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "prazo",
+    "processual",
+    "juridico",
+    "legal",
+    "brasil",
+    "cpc",
+    "cpp",
+    "clt",
+    "feriados",
+    "dias-uteis",
+    "cnj",
+    "tribunal",
+    "deadline",
+    "court",
+    "brazilian-law"
+  ],
+  "author": "Guardian Legis <contato@guardianlegis.com.br>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guardianlegis/prazos-processuais.git"
+  },
+  "homepage": "https://github.com/guardianlegis/prazos-processuais#readme",
+  "bugs": {
+    "url": "https://github.com/guardianlegis/prazos-processuais/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0"
+  }
+}
