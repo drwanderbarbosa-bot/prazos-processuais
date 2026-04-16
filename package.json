@@ -45,11 +45,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guardianlegis/prazos-processuais.git"
+    "url": "https://github.com/drwanderbarbosa-bot/prazos-processuais.git"
   },
-  "homepage": "https://github.com/guardianlegis/prazos-processuais#readme",
+  "homepage": "https://github.com/drwanderbarbosa-bot/prazos-processuais#readme",
   "bugs": {
-    "url": "https://github.com/guardianlegis/prazos-processuais/issues"
+    "url": "https://github.com/drwanderbarbosa-bot/prazos-processuais/issues"
   },
   "engines": {
     "node": ">=16.0.0"
